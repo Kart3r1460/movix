@@ -1,0 +1,134 @@
+/* Menu déroulant*/ 
+
+nav{
+  width 100%;
+  margin 0 auto;
+  background-color: white;
+  position:sticky;
+  top: 0px;
+}
+
+
+nav ul{
+  list-style-type:none;
+}
+
+nav ul li{
+  float: left;
+  width:25%;
+  text-align: left;
+}
+
+nav ul::after{
+  content:"";
+  display:table;
+  clear:both;
+  
+}
+
+nav a{
+  display: block;
+  text-decoration:none;
+  color: black;
+  border-bottom:2px solid transparent;
+  padding:10px 0px;
+}
+
+.sous{
+  display:block;  /*cacher sous menu */ 
+  box-shadow:0px 1px 2px #CCC;
+  background-color:white;
+}
+
+nav >ul li:hover .sous{
+  display:block;
+  
+}
+
+.sous li{
+ 
+  width:100%;
+  text-align: left;
+}
+
+.sous a{
+  padding:10px;
+  margin-left:-20px;
+}
+
+.sous a:hover{
+  border-bottom:none;
+  background-color: RGBa(200,200,200,0.1);
+  display:block;
+  border-bottom: 1px solid gold;
+  color:orange;
+}
+
+.color a:hover{
+  color:orange;
+}
+
+.sous{
+  display:none;
+  outline: none;
+  box-shadow: 0px 1px 2px #CCC;
+  background-color: white;
+  position:absolute;
+  top: 20px;
+  width:100%;
+  z-index:1000;
+  
+}
+
+nav ul li{
+  float:left;
+  width: 25%;
+  text-align:center;
+  position: relative;
+}
+
+/* Fin du menu déroulant*/ 
+
+  #notime{
+      text-align: center;
+      color:gold;
+      font-size: 20px;
+  }
+
+  .titrefilm{
+    text-align: center;
+    color:black;
+    font-size: 40px;
+  }
+
+  .film{
+    text-align: left;
+    color:black;
+    font-size: 20px;
+  }
+
+  .try{
+    text-align: center;
+    border: 1px solid black;
+    margin-right:25% ;
+    margin-left:25% ;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    background-color: gold;
+    border-radius: 5px;
+    
+  }
+
+  #center{
+    text-align: center;
+  }
+
+  #t {
+    text-align: center;
+    color: black;
+    }
+
+    img {
+      max-width: 122px;
+	    height: auto;
+    }
